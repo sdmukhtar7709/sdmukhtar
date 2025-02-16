@@ -33,7 +33,7 @@ nav {
     align-items: center;
     height: 70px;
     padding: 10px 20px;
-    background: #1f3f46;
+    background: #202536;
     border-radius: 50px;
     position: fixed;
     top: 0;
@@ -77,6 +77,8 @@ nav ul li a:hover {
     flex-direction: column;
     cursor: pointer;
     z-index: 150;
+    border: 1px solid rgb(23, 253, 115);
+    
     
 
 }
@@ -491,6 +493,8 @@ footer{
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
+       
+    
 
         
         
