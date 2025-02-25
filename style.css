@@ -414,7 +414,7 @@ form{
 .contact-form input,
 .contact-form textarea {
     
-    width: 100%;
+    width: 90%;
     padding: 18px;
     background: #555557;
     color: #000000;
@@ -438,37 +438,35 @@ textarea:hover{
 .contact-form textarea {
     resize: none;
     height: 220px;
-
 }
 
 .send {
-    background-color: cyan;
-    width: 100%;
+    /* border-radius: 35px; */
+    /* background-color: rgb(75, 136, 136); */
+    /* width: 50%;
     padding: 10px;
     margin-top: 5px;
     transition: box-shadow 0.4s ease-in-out;
     cursor: pointer;
     font-size: 1rem;
     font-weight: 600;
-    border: none;
-    border-radius: 0.5rem;
+    
+    
     color: #000000;
-    outline: none;
+    
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
-    background-color: #222450;
-    border: 2px solid white;
-
-
-
-
+    
+    border: 2px solid black; */
 
 }
 
 .send:hover {
-    box-shadow: 0 0 5px cyan, 0 0 20px cyan, 0 0 20px cyan, 0 0 20px cyan, 0 0 20px cyan;
-    background-color: rgb(137, 255, 255);
+    box-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 10px cyan, 0 0 10px cyan, 0 0 10px cyan;
+    /* background-color: rgb(137, 255, 255); */
+    background-color: rgb(36, 169, 169);
     transform: translateY(-5px);
+    color: white;
 }
 
 .last-text {
