@@ -462,11 +462,13 @@ textarea:hover{
 }
 
 .send:hover {
-    box-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 10px cyan, 0 0 10px cyan, 0 0 10px cyan;
-    /* background-color: rgb(137, 255, 255); */
-    background-color: rgb(36, 169, 169);
-    transform: translateY(-5px);
+    box-shadow: 0 0 2px cyan, 0 0 12px cyan, 0 0 6px cyan, 0 0 10px cyan, 0 0 150px cyan;
     color: white;
+    /* background-color: rgb(137, 255, 255); */
+    background-color: cyan;
+    transform: translatey(-3px);
+    color: white;
+    cursor: pointer;
 }
 
 .last-text {
@@ -539,18 +541,8 @@ footer{
 
 
     }
-    .rightsection img {
-       display: inline;
-       height: auto;
-        width: 100%;
-        max-width: 100px;
-        height: 100%;
-
-        
-        height: 80px;
-        border-radius: 10px;
-        transition: box-shadow 0.4s ease-in-out;
-        margin-right: 40px;
+    .rightsection img{
+        display: none;
     }
     
     .about {
@@ -558,6 +550,7 @@ footer{
         text-align: center;
     }
     .about-img img {
+       
        
         /* width: 100%; */
         max-width: 200px;
@@ -574,6 +567,7 @@ footer{
         align-items: center;
         display: inline;
         gap: 50px;
+        
        
 
         
@@ -609,9 +603,11 @@ footer{
         width: 100%;
         margin: 10px 4px;
         height: 100%;
+       
         
         
     }
+    
     input:hover{
         border: 2px solid rgb(23, 237, 253);
     }
