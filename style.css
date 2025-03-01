@@ -1,3 +1,9 @@
+
+
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -326,7 +332,7 @@ span {
 
 
 .card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 0 10px cyan, 0 0 20px cyan, 0 0 30px cyan, 0 0 40px cyan;
+    box-shadow: 0 8px 16px rgb(21, 27, 187), 0 0 10px rgb(21, 27, 187), 0 0 20px rgb(21, 27, 187), 0 0 30px rgb(21, 27, 187), 0 0 40px rgb(21, 27, 187);
     transform: translateY(-10px);
 
 }
