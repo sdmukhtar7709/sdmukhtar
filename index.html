@@ -18,13 +18,15 @@
 <body>
     <header>
         <nav>
-            <div class="left"> Welcome To My Portfolio</div>
+            <div class="left">
+                <a href="#home" class="logo-link">Welcome To My Portfolio</a>
+            </div>
             <div class="right">
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#About">About</a></li>
-                    <li><a href="#skils">Skills</a></li>
-                    <li><a href="https://chataimukhtar.vercel.app/">AI</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#Contact">Contact me</a></li>
                 </ul>
                 <div class="hamburger" onclick="toggleMenu()">
@@ -44,9 +46,9 @@
                 <span id="element"></span>
                 <br>
                 <div class="home-sci">
-                    <a href="https://www.linkedin.com/in/mukhtar-sayyed/" onclick="openNewTab()" style="--i:10;"><i
-                            class='bx bxl-linkedin'></i></a>
-                    <a href="https://www.instagram.com/sd_mukhtar_007/" style="--i:9;"><i
+                    <a href="https://www.linkedin.com/in/mukhtar-sayyed/" target="self" onclick="openNewTab()"
+                        style="--i:10;"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.instagram.com/sd_mukhtar_007/" target="self" style="--i:9;"><i
                             class='bx bxl-instagram'></i></a>
                     <a href="#" style="--i:8;"><i class='bx bxl-whatsapp'></i></a>
                     <!-- <a href="#" style="--i:7;"><i class='bx bxl-facebook'></i></a> -->
@@ -54,7 +56,8 @@
                 </div>
                 <div class="btnfront">
                     <button class="btn ">Download Resume</button> <br>
-                    <a href="https://www.github.com/sdmukhtar7709"><button class="btn">Visit GitHub</button></a>
+                    <a href="https://www.github.com/sdmukhtar7709" target="self"><button class="btn">Visit
+                            GitHub</button></a>
                 </div>
             </div>
             <div class="rightsection">
@@ -74,50 +77,230 @@
                     creating captivating website designs and implementing them through frontend development. I am
                     currently studying at GHRCEM Pune, pursuing B.Tech in my 3rd year. I enjoy creating frontend web
                     pages.</p>
-                <a href="https://www.github.com/sdmukhtar7709"><button class="btn" href="">Visit GitHub</button></a>
+                <a href="https://www.github.com/sdmukhtar7709" target="self"><button class="btn" href="">Visit
+                        GitHub</button></a>
             </div>
         </section>
 
-        <section id="skils" class="skilscard">
-            <div class="cardsss">
-                <div class="card">
-                    <img src="photos/web-dev.webp" alt="Card Image" id="web-devp">
-                    <div class="card-content">
-                        <h3>Web Developer</h3>
-                        <p>I am a passionate web developer focused on creating responsive, user-friendly websites using
-                            modern technologies and clean, efficient code.</p>
-
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">Technical Skills & Interests</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programming Languages</h3>
+                        <div class="skill-items">
+                            <span class="skill-item">Java</span>
+                            <span class="skill-item">C++</span>
+                            <span class="skill-item">Python</span>
+                            <span class="skill-item">JavaScript</span>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <img src="photos/UI-UX-designer.webp" alt="Card Image">
-                    <div class="card-content">
-                        <h3>UI/UX Design</h3>
-                        <p>As a UI/UX designer, I focus on crafting intuitive and visually appealing interfaces that
-                            enhance user experience and drive engagement.</p>
 
+                    <div class="skill-category">
+                        <h3>Cloud & Databases</h3>
+                        <div class="skill-items">
+                            <span class="skill-item">MongoDB</span>
+                            <span class="skill-item">DBMS</span>
+                            <span class="skill-item">MySQL</span>
+                            <span class="skill-item"></span>
+                            <span class="skill-item"></span>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <img src="photos/javaiamge.webp" alt="Card Image">
-                    <div class="card-content">
-                        <h3>Java</h3>
-                        <p>Proficient in Java, leveraging object-oriented principles and modern frameworks to build
-                            efficient, high-performance software solutions.</p>
 
+                    <div class="skill-category">
+                        <h3>Tools & Frameworks</h3>
+                        <div class="skill-items">
+                            <span class="skill-item">React.js</span>
+                            <span class="skill-item">Bootstrap</span>
+                            <span class="skill-item">Express.js</span>
+                            <span class="skill-item">API</span>
+                            <span class="skill-item">Git & GitHub</span>
+                            <span class="skill-item">Node js</span>
+                            <span class ="skill-item">Postman</span>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <img src="photos/ms-officessss.jpg" alt="Card Image">
-                    <div class="card-content">
-                        <h3>MS Office</h3>
-                        <p>I specialize in utilizing a range of Office applications such as Word, Excel, PowerPoin,
-                            create professional documents, and deliver impactful presentations.</p>
 
+                    <div class="skill-category">
+                        <h3>Areas of Interest</h3>
+                        <div class="skill-items">
+                            <span class="skill-item">Web development</span>
+                            <span class="skill-item">UI/UX</span>
+                            <span class="skill-item">AI & Chatbots</span>
+                            <span class="skill-item">Full Stack Development</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
+
+
+
+
+
+
+
+
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project">
+                                <img src="photos/food.png" alt="">
+                            </div>
+                            <!--                        <div class="project-overlay">-->
+                            <!--                            <div class="project-links">-->
+                            <!--                                <a href="#" class="project-link" target="_blank">-->
+                            <!--                                    <span class="link-icon">🔗</span>-->
+                            <!--                                    Live Demo-->
+                            <!--                                </a>-->
+                            <!--                                <a href="#" class="project-link" target="_blank">-->
+                            <!--                                    <span class="link-icon">💻</span>-->
+                            <!--                                    GitHub-->
+                            <!--                                </a>-->
+                            <!--                            </div>-->
+                            <!--                        </div>-->
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Online Food Order System</h3>
+                                <span class="project-date">Sept 2024</span>
+                            </div>
+                            <p> Developed a web-based food ordering platform with cart functionality. Built a responsive
+                                user interface with dynamic cart functionality.Designed and implemented an admin panel
+                                for real-time order and menu management.</p>
+                            <div class="project-tech">
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                                <span>HTML/CSS</span>
+                                <span>JavaScript</span>
+                                <span>MySQL</span>
+                            </div>
+                            <div class="project-actions">
+
+                                <a href="https://github.com/sdmukhtar7709/food-order-system" target="self"
+                                    class="btn-project btn-github" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                            <span class="project-icon">🤖</span>
+                        </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Responsive ChatBot</h3>
+                                <span class="project-date">June 2025</span>
+                            </div>
+                            <p> Built a chatbot with real-time response logic and image input analysis.– Enabled image upload and processing for contextual chat responses.– Implemented JavaScript-based response logic simulating basic AI behavior.</p>
+                            <div class="project-tech">
+                                <span>HTML,CSS</span>
+                                <span>External APIs</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://chataimukhtar.vercel.app/" class="btn-project" target="_blank">View
+                                    </a>
+                                <a href="https://github.com/sdmukhtar7709/ChatBot_Gemini" class="btn-project btn-github"
+                                    target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project">
+                                <img src="photos/wura.jpg" alt="">
+                            </div>
+                            <!--                        <div class="project-overlay">-->
+                            <!--                            <div class="project-links">-->
+                            <!--                                <a href="#" class="project-link" target="_blank">-->
+                            <!--                                    <span class="link-icon">🔗</span>-->
+                            <!--                                    Live Demo-->
+                            <!--                                </a>-->
+                            <!--                                <a href="#" class="project-link" target="_blank">-->
+                            <!--                                    <span class="link-icon">💻</span>-->
+                            <!--                                    GitHub</span>-->
+                            <!--                                </a>-->
+                            <!--                            </div>-->
+                            <!--                        </div>-->
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Fullstack Rest Api-Project</h3>
+                                <span class="project-date">May 2025</span>
+                            </div>
+                            <p>Developed a CRUD web application simulating Quora using Node.js and EJS.Implemented UUID-based post management with RESTful API design.Used server-side rendering and method override for PATCH and DELETE support</p>
+                            <div class="project-tech">
+                                <span>Node.js</span>
+                                 <span>Express.js</span>
+                                  <span>EJS</span>
+                                <span>HTML5,CSS3</span>
+                                <span>UUID</span>
+                            </div>
+                            <div class="project-actions">
+                                <!--                            <a href="#" class="btn-project" target="_blank">View Demo</a>-->
+                                <a href="https://github.com/sdmukhtar7709/fullstack-rest-api-project" class="btn-project btn-github"
+                                    target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project">
+                                <img src="photos/Weather-Api.jpg" alt="">
+                            </div>
+                            <!--                        <div class="project-overlay">-->
+                            <!--                            <div class="project-links">-->
+                            <!--                                <a href="#" class="project-link" target="_blank">-->
+                            <!--                                    <span class="link-icon">🔗</span>-->
+                            <!--                                    Live Demo-->
+                            <!--                                </a>-->
+                            <!--                                <a href="#" class="project-link" target="_blank">-->
+                            <!--                                    <span class="link-icon">💻</span>-->
+                            <!--                                    GitHub</a>-->
+                            <!--                                </a>-->
+                            <!--                            </div>-->
+                            <!--                        </div>-->
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>React weather App</h3>
+                                <span class="project-date">Ongoing</span>
+                            </div>
+                            <p>A modern React weather app using Vite and OpenWeatherMap API. Displays real-time weather, temperature, humidity, wind, and more with dynamic icons and images. Responsive card UI with error handling and city search. Easy to use, fast, and visually appealing for any device..</p>
+                            <div class="project-tech">
+                                <span>React js</span>
+                                <span>External Api</span>
+                                <span>Css.Html</span>
+                                <span>Express.js</span>
+                            </div>
+                            <div class="project-actions">
+                                <!--                            <a href="#" class="btn-project" target="_blank">View Demo</a>-->
+                                <a href="https://github.com/sdmukhtar7709/React_weather_App" class="btn-project btn-github"
+                                    target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
 
         <section class="conatct" id="Contact">
             <div class="con">
@@ -129,8 +312,9 @@
                     <p class="conatct-p"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I’m a Full Stack Web Developer
                         specializing in creating dynamic and user-friendly websites. Whether you need a web solution,
                         UI/UX improvements, or collaboration, feel free to reach out. You can contact me via email at
-                        mukhtarsayyed64@gmail.com or connect on LinkedIn  <a
-                            href="https://www.linkedin.com/in/mukhtar-sayyed/">Click</a>.&nbsp; Let’s build something
+                        mukhtarsayyed64@gmail.com or connect on LinkedIn <a
+                            href="https://www.linkedin.com/in/mukhtar-sayyed/" target="self">Click</a>.&nbsp; Let’s
+                        build something
                         amazing together! Looking forward to hearing from you.</p>
                     <br>
                     <div class="contact-lists">
@@ -153,7 +337,9 @@
                             <input type="text" placeholder="Enter Your Subject">
                             <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message"
                                 required></textarea>
-                            <input  style="  border-radius: 35px; background-color: black; color: white; border: 3px solid white; padding: 14px;" type="submit" value="Submit" class="send">
+                            <input
+                                style="  border-radius: 35px; background-color: black; color: white; border: 3px solid white; padding: 14px;"
+                                type="submit" value="Submit" class="send">
                         </form>
                     </div>
                 </div>
@@ -165,19 +351,10 @@
             </div>
         </footer>
     </main>
+    
+    <!-- External JavaScript Files -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Web Developer...', '&amp; Web Designer...'],
-            typeSpeed: 50,
-        });
-
-
-        function toggleMenu() {
-            const navLinks = document.querySelector('.nav-links');
-            navLinks.classList.toggle('active');
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
