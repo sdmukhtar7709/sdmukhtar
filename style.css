@@ -415,7 +415,7 @@ nav ul li a:hover::after {
     .rightsection img {
         width: 70%;
         max-width: 250px;
-        height: 250px;
+        height: 125px;
     }
 }
 
