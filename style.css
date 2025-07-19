@@ -200,8 +200,8 @@ nav ul li a:hover::after {
 
 /* Theme Toggle Button */
 .theme-toggle {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     background: rgba(59, 130, 246, 0.1);
     backdrop-filter: blur(10px);
     border: 2px solid rgba(59, 130, 246, 0.3);
@@ -222,31 +222,31 @@ nav ul li a:hover::after {
 }
 
 .toggle-icon {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     transition: all 0.3s ease;
 }
 
 @media (max-width: 768px) {
     .theme-toggle {
-        width: 35px;
-        height: 35px;
-        margin: 0 5px;
+        width: 55px;
+        height: 55px;
+        margin: 0 8px;
     }
     
     .toggle-icon {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 }
 
 @media (max-width: 480px) {
     .theme-toggle {
-        width: 30px;
-        height: 30px;
-        margin: 0 3px;
+        width: 50px;
+        height: 50px;
+        margin: 0 5px;
     }
     
     .toggle-icon {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -422,7 +422,7 @@ nav ul li a:hover::after {
     .rightsection img {
         width: 50%;
         max-width: 250px;
-        height: 250px;
+        height: 300px;
         margin-right: 0;
         order: 2;
     }
@@ -432,7 +432,7 @@ nav ul li a:hover::after {
     .rightsection img {
         width: 55%;
         max-width: 200px;
-        height: 200px;
+        height: 240px;
         margin-top: -20px;
     }
 }
