@@ -995,8 +995,21 @@ span {
 .education-content {
     max-width: 800px;
     margin: 0 auto;
-    width: 100vh;
-    height: 100wh;
+    width: 100%;
+    padding: 80px 20px;
+}
+
+@media (max-width: 768px) {
+    .education-content {
+        padding: 60px 15px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .education-content {
+        padding: 40px 10px;
+    }
 }
 
 .education-card {
@@ -1007,6 +1020,20 @@ span {
     transition: transform 0.3s ease;
     border: 1px solid rgba(59, 130, 246, 0.2);
     color: #e2e8f0;
+}
+
+@media (max-width: 768px) {
+    .education-card {
+        padding: 1.5rem;
+        border-radius: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .education-card {
+        padding: 1.2rem;
+        border-radius: 10px;
+    }
 }
 
 .education-card:hover {
@@ -1022,19 +1049,63 @@ span {
     gap: 1rem;
 }
 
+@media (max-width: 768px) {
+    .education-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+        margin-bottom: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .education-header {
+        gap: 0.6rem;
+        margin-bottom: 1rem;
+    }
+}
+
 .education-header h3 {
     font-size: 1.5rem;
     font-weight: 600;
     color: #e2e8f0;
 }
 
+@media (max-width: 768px) {
+    .education-header h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .education-header h3 {
+        font-size: 1.2rem;
+    }
+}
+
 .education-period {
-    background: linear-gradient(45deg,  rgba(59, 130, 246, 0.3));
+    background: linear-gradient(45deg, rgba(59, 130, 246, 0.3));
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 25px;
     font-size: 0.9rem;
     font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .education-period {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.85rem;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .education-period {
+        padding: 0.3rem 0.7rem;
+        font-size: 0.8rem;
+        border-radius: 15px;
+    }
 }
 
 .education-details h4 {
@@ -1043,9 +1114,37 @@ span {
     margin-bottom: 0.5rem;
 }
 
+@media (max-width: 768px) {
+    .education-details h4 {
+        font-size: 1.1rem;
+        margin-bottom: 0.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .education-details h4 {
+        font-size: 1rem;
+        margin-bottom: 0.3rem;
+    }
+}
+
 .education-location {
     color: #64748b;
     margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .education-location {
+        font-size: 0.95rem;
+        margin-bottom: 0.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .education-location {
+        font-size: 0.9rem;
+        margin-bottom: 0.3rem;
+    }
 }
 
 .education-gpa {
@@ -1054,16 +1153,56 @@ span {
     margin-bottom: 1.5rem;
 }
 
+@media (max-width: 768px) {
+    .education-gpa {
+        font-size: 1rem;
+        margin-bottom: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .education-gpa {
+        font-size: 0.95rem;
+        margin-bottom: 1rem;
+    }
+}
+
 .coursework h5 {
     color: #1e293b;
     margin-bottom: 1rem;
     font-size: 1rem;
 }
 
+@media (max-width: 768px) {
+    .coursework h5 {
+        font-size: 0.95rem;
+        margin-bottom: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .coursework h5 {
+        font-size: 0.9rem;
+        margin-bottom: 0.7rem;
+    }
+}
+
 .coursework-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .coursework-tags {
+        gap: 0.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .coursework-tags {
+        gap: 0.3rem;
+    }
 }
 
 .coursework-tags span {
@@ -1073,6 +1212,22 @@ span {
     border-radius: 25px;
     font-size: 0.9rem;
     font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .coursework-tags span {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.85rem;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .coursework-tags span {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.8rem;
+        border-radius: 15px;
+    }
 }
 
 
