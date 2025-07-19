@@ -269,12 +269,14 @@ nav ul li a:hover::after {
         text-align: center;
         width: 100%;
         order: 1;
+        
     }
 }
 
 @media (max-width: 480px) {
     .leftsection {
         font-size: 1.8rem;
+        margin-top: 10px;
     }
 }
 
