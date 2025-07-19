@@ -408,6 +408,8 @@ nav ul li a:hover::after {
         height: 125px;
         margin-right: 0;
         order: 2;
+        
+        margin-top: -50px;
     }
 }
 
@@ -416,6 +418,8 @@ nav ul li a:hover::after {
         width: 70%;
         max-width: 250px;
         height: 125px;
+        
+        margin-top: -50px;
     }
 }
 
