@@ -1,14 +1,12 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:Georgia, 'Times New Roman', Times, serif
-
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 html {
     scroll-behavior: smooth;
-
 }
 
 body {
@@ -43,7 +41,6 @@ section:last-of-type::after {
     display: none;
 }
 
-
 nav {
     margin-top: 5px;
     margin-left: 8px;
@@ -73,19 +70,14 @@ nav {
     }
 }
 
-
-.navimage{
+.navimage {
     height: fit-content;
     width: fit-content;
-
 }
-
 
 nav ul {
     display: flex;
     list-style: none;
-
-
 }
 
 nav ul li a {
@@ -176,20 +168,14 @@ nav ul li a:hover::after {
     flex-direction: column;
     cursor: pointer;
     z-index: 150;
-   
-    
-    
-
 }
 
 .hamburger .bar {
     width: 25px;
     height: 3px;
     background-color: white;
-    margin: 4px 0; 
+    margin: 4px 0;
     border-radius: 5px;
-   
-    
 }
 
 .home-sci a {
@@ -265,7 +251,7 @@ nav ul li a:hover::after {
 
 @media (max-width: 480px) {
     .firstsection {
-        padding: 100px 15px 40px;
+        padding: 60px 15px 40px;
         gap: 1.5rem;
     }
 }
@@ -302,9 +288,7 @@ nav ul li a:hover::after {
     cursor: pointer;
     width: 180px;
     margin: 10px 0;
-
 }
-
 
 .btn {
     width: 180px;
@@ -634,12 +618,6 @@ span {
     }
 }
 
-
-
-
-
-
-
 /* Projects Section */
 .projects {
     max-width: 1200px;
@@ -942,21 +920,6 @@ span {
     box-shadow: 0 4px 15px rgba(36, 41, 46, 0.5) !important;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .cardsss {
     display: flex;
     flex-wrap: wrap;
@@ -964,11 +927,7 @@ span {
     gap: 50px;
     height: 100vh;
     align-items: center;
-
-
-   
 }
-
 
 .card {
     width: 250px;
@@ -977,13 +936,9 @@ span {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    
     margin: 8px;
     color: rgb(177, 177, 177);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 0 5px rgb(21, 27, 187), 0 0 7px rgb(29, 22, 217), 0 0 0px rgb(18, 18, 198), 0 0 0px rgb(19, 14, 168);
-
-
-
 }
 
 .card img {
@@ -1033,6 +988,112 @@ span {
     transform: translateY(-5px);
     box-shadow: 0 20px 40px rgba(59, 130, 246, 0.3);
 }
+
+
+
+/* Education Section */
+.education-content {
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100vh;
+    height: 100wh;
+}
+
+.education-card {
+    background: rgba(15, 23, 42, 0.8);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    color: #e2e8f0;
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+}
+
+.education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.education-header h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #e2e8f0;
+}
+
+.education-period {
+    background: linear-gradient(45deg,  rgba(59, 130, 246, 0.3));
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.education-details h4 {
+    font-size: 1.2rem;
+    color: #2563eb;
+    margin-bottom: 0.5rem;
+}
+
+.education-location {
+    color: #64748b;
+    margin-bottom: 0.5rem;
+}
+
+.education-gpa {
+    font-size: 1.1rem;
+    color: #e2e8f0;
+    margin-bottom: 1.5rem;
+}
+
+.coursework h5 {
+    color: #1e293b;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.coursework-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.coursework-tags span {
+    background: #e0e7ff;
+    color: #3730a3;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .con {
@@ -1222,7 +1283,7 @@ footer {
     .hamburger {
         display: flex;
     }
-    
+
     .nav-links {
         display: none;
         flex-direction: column;
@@ -1247,17 +1308,17 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
     }
-    
+
     .skill-category {
         min-height: 200px;
         padding: 1.5rem;
     }
-    
+
     .project-actions {
         flex-direction: column;
         gap: 0.5rem;
     }
-    
+
     .btn-project {
         min-width: auto;
         width: 100%;
@@ -1269,39 +1330,39 @@ footer {
         grid-template-columns: 1fr;
         gap: 1rem;
     }
-    
+
     .skill-category {
         min-height: 180px;
         padding: 1.2rem;
         margin: 4px;
     }
-    
+
     .skill-category h3 {
         font-size: 1.3rem;
         margin-bottom: 1rem;
     }
-    
+
     .skill-item {
         font-size: 0.8rem;
         padding: 0.4rem 0.8rem;
     }
-    
+
     .project-tech span {
         font-size: 0.7rem;
         padding: 0.2rem 0.6rem;
     }
-    
+
     .project-date {
         font-size: 0.7rem;
         padding: 0.2rem 0.6rem;
     }
-    
+
     .contact-list {
         flex-direction: column;
         text-align: center;
         gap: 5px;
     }
-    
+
     .image-top {
         width: 25px;
         height: 25px;

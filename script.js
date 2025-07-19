@@ -11,7 +11,7 @@
 // Creates typewriter effect for the hero section text
 // Displays rotating text like "Web Developer..." and "Web Designer..."
 var typed = new Typed('#element', {
-    strings: ['Web Developer...', '&amp; Web Designer...'], // Array of strings to display
+    strings: ['Software Developer...', '&amp; Tech Enthusiast...'], // Array of strings to display
     typeSpeed: 50, // Speed of typing animation (milliseconds per character)
 });
 
