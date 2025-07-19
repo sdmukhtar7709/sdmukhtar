@@ -61,6 +61,26 @@ nav {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
+nav .left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+nav .center {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 @media (max-width: 768px) {
     nav {
         width: 95%;
@@ -180,13 +200,10 @@ nav ul li a:hover::after {
 
 /* Theme Toggle Button */
 .theme-toggle {
-    position: fixed;
-    top: 85px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    background: rgba(15, 23, 42, 0.95);
-    backdrop-filter: blur(20px);
+    width: 40px;
+    height: 40px;
+    background: rgba(59, 130, 246, 0.1);
+    backdrop-filter: blur(10px);
     border: 2px solid rgba(59, 130, 246, 0.3);
     border-radius: 50%;
     display: flex;
@@ -194,8 +211,8 @@ nav ul li a:hover::after {
     justify-content: center;
     cursor: pointer;
     transition: all 0.3s ease;
-    z-index: 1000;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 10px;
 }
 
 .theme-toggle:hover {
@@ -205,33 +222,31 @@ nav ul li a:hover::after {
 }
 
 .toggle-icon {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     transition: all 0.3s ease;
 }
 
 @media (max-width: 768px) {
     .theme-toggle {
-        width: 45px;
-        height: 45px;
-        top: 80px;
-        right: 15px;
+        width: 35px;
+        height: 35px;
+        margin: 0 5px;
     }
     
     .toggle-icon {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 }
 
 @media (max-width: 480px) {
     .theme-toggle {
-        width: 40px;
-        height: 40px;
-        top: 75px;
-        right: 10px;
+        width: 30px;
+        height: 30px;
+        margin: 0 3px;
     }
     
     .toggle-icon {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
     }
 }
 
