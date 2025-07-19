@@ -48,6 +48,44 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // ==========================================
+// 4. THEME TOGGLE FUNCTIONALITY
+// ==========================================
+// Toggles between dark and light theme
+// Saves user preference in localStorage
+function toggleTheme() {
+    const body = document.body;
+    const themeToggle = document.querySelector('.toggle-icon');
+    
+    // Toggle the light-theme class
+    body.classList.toggle('light-theme');
+    
+    // Update the icon based on current theme
+    if (body.classList.contains('light-theme')) {
+        themeToggle.textContent = '☀️'; // Sun icon for light theme
+        localStorage.setItem('theme', 'light');
+    } else {
+        themeToggle.textContent = '🌙'; // Moon icon for dark theme
+        localStorage.setItem('theme', 'dark');
+    }
+}
+
+// Load saved theme on page load
+document.addEventListener('DOMContentLoaded', function() {
+    const savedTheme = localStorage.getItem('theme');
+    const body = document.body;
+    const themeToggle = document.querySelector('.toggle-icon');
+    
+    // Apply saved theme or default to dark
+    if (savedTheme === 'light') {
+        body.classList.add('light-theme');
+        themeToggle.textContent = '☀️';
+    } else {
+        body.classList.remove('light-theme');
+        themeToggle.textContent = '🌙';
+    }
+});
+
+// ==========================================
 // FUTURE ENHANCEMENTS (Optional)
 // ==========================================
 // Additional functionality that can be added:

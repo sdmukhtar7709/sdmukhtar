@@ -178,6 +178,63 @@ nav ul li a:hover::after {
     border-radius: 5px;
 }
 
+/* Theme Toggle Button */
+.theme-toggle {
+    position: fixed;
+    top: 85px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(59, 130, 246, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.theme-toggle:hover {
+    transform: translateY(-2px);
+    border-color: rgba(59, 130, 246, 0.5);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
+}
+
+.toggle-icon {
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .theme-toggle {
+        width: 45px;
+        height: 45px;
+        top: 80px;
+        right: 15px;
+    }
+    
+    .toggle-icon {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .theme-toggle {
+        width: 40px;
+        height: 40px;
+        top: 75px;
+        right: 10px;
+    }
+    
+    .toggle-icon {
+        font-size: 1.1rem;
+    }
+}
+
 .home-sci a {
     display: inline-flex;
     justify-content: center;
@@ -1258,7 +1315,7 @@ span {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 3rem;
     padding: 20px;
-    margin-top: 80px;
+    margin-top: 10px;
     margin-right: auto;
     margin-left: auto;
     color: #e2e8f0;
@@ -1524,4 +1581,176 @@ footer {
         width: 25px;
         height: 25px;
     }
+}
+
+/* Light Theme Styles */
+body.light-theme {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    color: #1e293b;
+}
+
+body.light-theme section {
+    border-bottom: 2px solid rgba(59, 130, 246, 0.2);
+}
+
+body.light-theme nav {
+    background: rgba(248, 250, 252, 0.95);
+    border: 1px solid rgba(59, 130, 246, 0.1);
+}
+
+body.light-theme nav ul li a {
+    color: #1e293b;
+}
+
+body.light-theme nav ul li a:hover {
+    color: #3b82f6;
+}
+
+body.light-theme .logo-link {
+    color: #1e293b;
+}
+
+body.light-theme .logo-link:hover {
+    color: #3b82f6;
+}
+
+body.light-theme .hamburger .bar {
+    background-color: #1e293b;
+}
+
+body.light-theme .theme-toggle {
+    background: rgba(248, 250, 252, 0.95);
+    border: 2px solid rgba(59, 130, 246, 0.3);
+}
+
+body.light-theme .nav-links {
+    background: rgba(248, 250, 252, 0.95);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+body.light-theme .leftsection {
+    color: #1e293b;
+}
+
+body.light-theme .about-text h2 {
+    color: #1e293b;
+}
+
+body.light-theme .about-text h4 {
+    color: #475569;
+}
+
+body.light-theme .about-text p {
+    color: #64748b;
+}
+
+body.light-theme .skill-category {
+    background: rgba(248, 250, 252, 0.9);
+    border: 2px solid rgba(59, 130, 246, 0.4);
+    color: #1e293b;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.1);
+}
+
+body.light-theme .skill-category h3 {
+    color: #1e293b;
+}
+
+body.light-theme .project-card {
+    background: rgba(248, 250, 252, 0.9);
+    border: 2px solid rgba(59, 130, 246, 0.4);
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.1);
+}
+
+body.light-theme .project-card:hover {
+    border: 2px solid rgba(59, 130, 246, 0.6);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.2);
+}
+
+body.light-theme .project-header h3 {
+    color: #1e293b;
+}
+
+body.light-theme .project-content p {
+    color: #475569;
+}
+
+body.light-theme .education-card {
+    background: rgba(248, 250, 252, 0.9);
+    border: 2px solid rgba(59, 130, 246, 0.4);
+    color: #1e293b;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.1);
+}
+
+body.light-theme .education-card:hover {
+    border: 2px solid rgba(59, 130, 246, 0.6);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.2);
+}
+
+body.light-theme .education-header h3 {
+    color: #1e293b;
+}
+
+body.light-theme .education-gpa {
+    color: #1e293b;
+}
+
+body.light-theme .con {
+    background: rgba(248, 250, 252, 0.9);
+    border: 2px solid rgba(59, 130, 246, 0.4);
+    color: #1e293b;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.1);
+}
+
+body.light-theme .con:hover {
+    border: 2px solid rgba(59, 130, 246, 0.6);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.2);
+}
+
+body.light-theme .contact-lists {
+    background: rgba(248, 250, 252, 0.9);
+    border: 2px solid rgba(59, 130, 246, 0.3);
+    color: #1e293b;
+}
+
+body.light-theme .contact-form input,
+body.light-theme .contact-form textarea {
+    background: rgba(241, 245, 249, 0.9);
+    color: #1e293b;
+    border: 2px solid rgba(59, 130, 246, 0.3);
+}
+
+body.light-theme .contact-form input:focus,
+body.light-theme .contact-form textarea:focus {
+    border: 2px solid rgba(59, 130, 246, 0.6);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+body.light-theme .card {
+    background: rgba(248, 250, 252, 0.9);
+    border: 2px solid rgba(59, 130, 246, 0.4);
+    color: #1e293b;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.1);
+}
+
+body.light-theme .card:hover {
+    border: 2px solid rgba(59, 130, 246, 0.6);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.2);
+}
+
+body.light-theme .card-content h3 {
+    color: #1e293b;
+}
+
+body.light-theme .card-content p {
+    color: #475569;
+}
+
+body.light-theme .last-text {
+    background: rgba(248, 250, 252, 0.95);
+    color: #64748b;
+    border-top: 2px solid rgba(59, 130, 246, 0.3);
+}
+
+body.light-theme footer {
+    background: rgba(248, 250, 252, 0.95);
 }
