@@ -42,14 +42,15 @@ section:last-of-type::after {
 }
 
 nav {
-    margin-top: 5px;
+    margin-top: 2px;
     margin-left: 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 55px;
     padding: 10px 20px;
-    background: rgba(15, 23, 42, 0.95);
+ background: rgba(15, 31, 47, .2);
+    border-bottom: 1px solid #152c42;
     backdrop-filter: blur(20px);
     border: 1px solid rgba(59, 130, 246, 0.2);
     border-radius: 50px;
