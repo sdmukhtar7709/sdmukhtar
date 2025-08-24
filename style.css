@@ -40,7 +40,6 @@ section::after {
 section:last-of-type::after {
     display: none;
 }
-
 nav {
     margin-top: 2px;
     margin-left: 8px;
